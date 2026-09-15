@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f4c542">
+  <meta name="description" content="Naam Jap — a simple offline mantra counting app for daily naam jap and spiritual discipline.">
+  <title>Naam Jap — Daily Mantra Counter</title>
+  <style>
+    :root{--gold:#e8b52f;--yellow:#fff4bf;--cream:#fffaf0;--brown:#4a3215;--muted:#806b45;--white:#fff}
+    *{box-sizing:border-box} html{scroll-behavior:smooth}
+    body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:var(--brown);background:linear-gradient(180deg,#fff9dc 0%,#fffdf7 42%,#fff7d8 100%);line-height:1.6}
+    a{color:inherit;text-decoration:none}.container{width:min(1120px,92%);margin:auto}
+    nav{position:sticky;top:0;z-index:10;background:rgba(255,250,230,.88);backdrop-filter:blur(12px);border-bottom:1px solid rgba(232,181,47,.2)}
+    .navin{height:72px;display:flex;align-items:center;justify-content:space-between}
+    .brand{font-size:1.25rem;font-weight:800}.brand span{color:var(--gold)}
+    .links{display:flex;gap:24px;font-size:.95rem}.links a:hover{color:#b98500}
+    .btn{display:inline-block;background:var(--gold);color:#3b280d;padding:12px 20px;border-radius:999px;font-weight:750;box-shadow:0 8px 24px rgba(190,145,25,.18)}
+    .hero{padding:92px 0 72px;text-align:center}.eyebrow{font-weight:800;color:#b17c00;letter-spacing:.08em;text-transform:uppercase;font-size:.78rem}
+    h1{font-size:clamp(2.5rem,7vw,5rem);line-height:1.02;margin:14px 0}.hero p{max-width:690px;margin:0 auto 28px;color:var(--muted);font-size:1.12rem}
+    .actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}.secondary{background:#fff;border:1px solid #ead79a;box-shadow:none}
+    .mockup{margin:55px auto 0;max-width:330px;padding:14px;border-radius:34px;background:#2f2415;box-shadow:0 28px 70px rgba(91,61,11,.22)}
+    .screen{background:linear-gradient(180deg,#fff5bf,#fffdf1);border-radius:24px;padding:28px 18px}.screen small{color:#8c702e}.count{font-size:3.8rem;font-weight:850;margin:12px 0;color:#4a3215}.circle{width:145px;height:145px;margin:auto;border:8px solid #e8b52f;border-radius:50%;display:grid;place-items:center;font-size:1.1rem;font-weight:800}
+    section{padding:76px 0}.sectionhead{text-align:center;margin-bottom:38px}.sectionhead h2{font-size:2rem;margin:8px 0}.sectionhead p{color:var(--muted)}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:rgba(255,255,255,.72);border:1px solid #f0dfa7;border-radius:22px;padding:26px;box-shadow:0 10px 35px rgba(107,76,17,.06)}
+    .icon{font-size:1.8rem}.card h3{margin:12px 0 6px}.card p{color:var(--muted);margin:0}
+    .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.step{padding:25px;border-radius:20px;background:#fff;border:1px solid #f0dfa7}.num{font-weight:900;color:#b17c00}
+    .privacy{background:#fff;border-radius:26px;border:1px solid #f0dfa7;padding:30px;max-width:850px;margin:auto}.privacy ul{color:var(--muted)}
+    footer{padding:34px 0;border-top:1px solid #ead79a;color:var(--muted);font-size:.9rem}.foot{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+    @media(max-width:760px){.links{display:none}.grid,.steps{grid-template-columns:1fr}.hero{padding-top:65px}section{padding:55px 0}}
+  </style>
+</head>
+<body>
+<nav><div class="container navin">
+  <a class="brand" href="#">Naam <span>Jap</span></a>
+  <div class="links"><a href="#features">Features</a><a href="#how">How it works</a><a href="#privacy">Privacy</a></div>
+  <a class="btn" href="#download">Get the App</a>
+</div></nav>
+
+<main>
+<section class="hero" id="download"><div class="container">
+  <div class="eyebrow">Simple • Peaceful • Offline</div>
+  <h1>Naam Jap</h1>
+  <p>A focused daily mantra counter designed to help you build a consistent naam jap practice — without accounts, ads, or unnecessary distractions.</p>
+  <div class="actions"><a class="btn" href="#features">Explore the App</a><a class="btn secondary" href="#privacy">Privacy First</a></div>
+  <div class="mockup" aria-label="Naam Jap app preview">
+    <div class="screen"><small>Today's Target</small><div class="count">108</div><div class="circle">Tap to Jap</div><p style="margin:18px 0 0;color:#806b45">0 / 108 completed</p></div>
+  </div>
+</div></section>
+
+<section id="features"><div class="container">
+  <div class="sectionhead"><div class="eyebrow">Made for your practice</div><h2>Everything you need. Nothing extra.</h2><p>Keep your attention on the mantra, not on a complicated interface.</p></div>
+  <div class="grid">
+    <article class="card"><div class="icon">🙏</div><h3>Daily Naam Jap</h3><p>Tap the central counter to record each repetition and keep your practice simple.</p></article>
+    <article class="card"><div class="icon">🎯</div><h3>Choose Your Target</h3><p>Set a daily target that fits your routine and work toward completing it each day.</p></article>
+    <article class="card"><div class="icon">🪷</div><h3>Choose Your Mantra</h3><p>Select from supported mantras such as Radhe, Shri Ram and Om Namah Shivay.</p></article>
+    <article class="card"><div class="icon">⭕</div><h3>Visual Progress</h3><p>A circular progress experience makes your progress easy to understand at a glance.</p></article>
+    <article class="card"><div class="icon">📴</div><h3>Offline First</h3><p>The app is designed to work without an internet connection or an online account.</p></article>
+    <article class="card"><div class="icon">🌼</div><h3>Peaceful Design</h3><p>A warm devotional-inspired interface keeps the experience calm and distraction-free.</p></article>
+  </div>
+</div></section>
+
+<section id="how"><div class="container">
+  <div class="sectionhead"><div class="eyebrow">Three simple steps</div><h2>Start your practice</h2></div>
+  <div class="steps">
+    <div class="step"><div class="num">01</div><h3>Select a mantra</h3><p>Choose the naam or mantra you want to practice.</p></div>
+    <div class="step"><div class="num">02</div><h3>Set your target</h3><p>Pick a daily count that is realistic for your routine.</p></div>
+    <div class="step"><div class="num">03</div><h3>Tap and complete</h3><p>Tap the counter for each repetition and work toward your daily goal.</p></div>
+  </div>
+</div></section>
+
+<section id="privacy"><div class="container">
+  <div class="privacy"><div class="eyebrow">Privacy</div><h2>Your practice stays yours.</h2>
+    <p>Naam Jap is designed as an offline-first app. It does not require an account or a server to count your daily naam jap.</p>
+    <ul><li>No account or login is required.</li><li>No advertising profile is created.</li><li>The app is intended to keep practice data on the device.</li><li>Internet access is not required for the core counting experience.</li></ul>
+    <a class="btn" href="privacy-policy.html">Read full Privacy Policy</a>
+  </div>
+</div></section>
+</main>
+
+<footer><div class="container foot"><div>© 2026 Naam Jap. Made for a simple daily practice.</div><div><a href="privacy-policy.html">Privacy Policy</a></div></div></footer>
+</body>
+</html>
